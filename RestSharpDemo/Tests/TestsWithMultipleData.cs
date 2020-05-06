@@ -10,8 +10,10 @@ using RestSharpDemo.Utilities;
 
 namespace RestSharpDemo.Tests
 {
-    public class TestsWithData
+    public class TestsWithMultipleData
     {
+        //reference, inspired from : https://www.ontestautomation.com/ By Bas Dijkstra
+
         [TestFixture]
         public class Tests
         {
@@ -24,7 +26,6 @@ namespace RestSharpDemo.Tests
             public void Setup()
             {    
                 _restClient = new RestClient(BaseUrl);
-
             }
 
             [TestCase("IN", "110001", HttpStatusCode.OK, TestName = "Check status code for IN with pin code 110001")]
@@ -55,15 +56,13 @@ namespace RestSharpDemo.Tests
                 // var output = response.DeserializeResponse();
                 Console.WriteLine("*****" + result.Places[0].PlaceName);
                
-                Assert.That(result.Places[0].PlaceName, Is.EqualTo(placeName));
+                Assert.That(result.Places[0].PlaceName, Is.EqualTo(placeName).IgnoreCase);
             }
 
             private static IEnumerable<TestCaseData> PlacesTestData()
             {
-                yield return new TestCaseData("au", "2140", "Homebush").SetName(
-                    "Check status code for 2140 that has place name as Homebush");
-                yield return new TestCaseData("au", "2140", "Homebush").SetName(
-                    "Check status code for 2140 that has place name as Homebush");
+                yield return new TestCaseData("in", "600001", "Flower bazar").SetName(
+                    "Check status code for 600001 that has place name as Flower bazar");
                 yield return new TestCaseData("au", "2140", "Homebush").SetName(
                     "Check status code for 2140 that has place name as Homebush");
 
