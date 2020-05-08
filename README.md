@@ -7,15 +7,15 @@ This project is developed and tested on dotnet core 3.1 on Mac OSX with Jetbrain
 
 ### Tests
 The tests directory has different tests,
-* [TestsWithGetOperation](/Tests/TestsWithGetOperation.cs) - Tests showing usage of GET operation.
+* [TestsWithGetOperation](/RestSharpDemo/Tests/TestsWithGetOperation.cs) - Tests showing usage of GET operation.
 * [TestsWithMultipleData](/Tests/TestsWIthMultipleData.cs) - Tests showing usage of Data-Driven capability using NUnit and RestShap
-* [TestsWithPostOperation](/Tests/TestsWithPostOperation.cs) - Tests showing usage of POST operation.
-* [TestsWithReports](/Tests/TestWithReport.cs) - Tests showing integration of Extent Reports with RestSharp.
+* [TestsWithPostOperation](/RestSharpDemo/Tests/TestsWithPostOperation.cs) - Tests showing usage of POST operation.
+* [TestsWithReports](/RestSharpDemo/Tests/TestWithReport.cs) - Tests showing integration of Extent Reports with RestSharp.
 
 ### Utilities
 This project has two helper classes to assist write better tests,
-* [Helper](/Utilities/Helper.cs) - Helper Class to organize commonly used methods
-* [Reporter](/Utilities/Reporter.cs) - Reporter Class that has Extent Report package integration.
+* [Helper](/RestSharpDemo/Utilities/Helper.cs) - Helper Class to organize commonly used methods
+* [Reporter](/RestSharpDemo/Utilities/Reporter.cs) - Reporter Class that has Extent Report package integration.
 
 Please feel free to extend this boilerplate project as per your needs.
 
