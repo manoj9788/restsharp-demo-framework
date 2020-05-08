@@ -26,6 +26,7 @@
                 
             }
             
+            
             [Test]
             public void SimpleGetRequestTest()
             {
@@ -39,6 +40,20 @@
                 //Assert
                 Console.WriteLine("**** This is the response **** "+ _restResponse.Content);
                 Assert.That(_restResponse.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+                
+            }
+            [Test]
+            public void SimpleGetRequestWithHelperMethod()
+            {
+                //Arrange
+                var restRequest = Helper.CreateGetRequest("api/users/2");
+                
+                //Act
+                var output = Helper.GetResponse(_restClient, restRequest);
+                
+                //Assert
+                Console.WriteLine("**** This is the response **** "+ output.Content);
+                Assert.That(output.StatusCode, Is.EqualTo(HttpStatusCode.OK));
                 
             }
             
