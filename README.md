@@ -8,9 +8,9 @@ This project is developed and tested on dotnet core 3.1 on Mac OSX with Jetbrain
 ### Tests
 The tests directory has different tests,
 * [TestsWithGetOperation](/RestSharpDemo/Tests/TestsWithGetOperation.cs) - Tests showing usage of GET operation.
-* [TestsWithMultipleData](/RestSharpDemo/Tests/TestsWIthMultipleData.cs) - Tests showing usage of Data-Driven capability using NUnit and RestShap
+* [TestsWithMultipleData](/RestSharpDemo/Tests/TestsWithMultipleData.cs) - Tests showing usage of Data-Driven capability using NUnit and RestShap
 * [TestsWithPostOperation](/RestSharpDemo/Tests/TestsWithPostOperation.cs) - Tests showing usage of POST operation.
-* [TestsWithReports](/RestSharpDemo/Tests/TestWithReport.cs) - Tests showing integration of Extent Reports with RestSharp.
+* [TestsWithReports](/RestSharpDemo/Tests/TestsWithReports.cs) - Tests showing integration of Extent Reports with RestSharp.
 
 ### Utilities
 This project has two helper classes to assist write better tests,
