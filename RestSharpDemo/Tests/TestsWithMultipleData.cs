@@ -10,12 +10,10 @@ using RestSharpDemo.Utilities;
 
 namespace RestSharpDemo.Tests
 {
-    public class TestsWithMultipleData
-    {
-        //reference, inspired from : https://www.ontestautomation.com/ By Bas Dijkstra
+    //Reference: Thanks Bas Dijkstra for introducing http://api.zippopotam.us
 
         [TestFixture]
-        public class Tests
+        public class TestsWithMultipleData
         {
             private IRestClient _restClient;
             private IRestRequest _restRequest;
@@ -68,5 +66,4 @@ namespace RestSharpDemo.Tests
 
             }
         }
-    }
 }
