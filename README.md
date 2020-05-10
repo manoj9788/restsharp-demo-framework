@@ -19,4 +19,6 @@ This project has two helper classes to assist write better tests,
 
 Please feel free to extend this boilerplate project as per your needs.
 
+If you want the same with the BDD flavour using SpecFlow, I'd recommend Karthik's content [here](https://www.youtube.com/watch?v=lg-2e5KpjOA&list=PL6tu16kXT9PrnRtsbMjadSzrM0f43Nx8W)
+
 I'm no C# expert and tried to put together this project with my limited knowledge, please be gentle and contribute to make this project better.
