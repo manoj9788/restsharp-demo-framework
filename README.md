@@ -12,13 +12,13 @@ The tests directory has different tests,
 * [TestsWithPostOperation](/RestSharpDemo/Tests/TestsWithPostOperation.cs) - Tests showing usage of POST operation.
 * [TestsWithReports](/RestSharpDemo/Tests/TestsWithReports.cs) - Tests showing integration of Extent Reports with RestSharp.
 
-### Utilities
+### Utilities 
 This project has two helper classes to assist write better tests,
 * [Helper](/RestSharpDemo/Utilities/Helper.cs) - Helper Class to organize commonly used methods
 * [Reporter](/RestSharpDemo/Utilities/Reporter.cs) - Reporter Class that has Extent Report package integration.
 
 Please feel free to extend this boilerplate project as per your needs.
 
-If you want the same with the BDD flavour using SpecFlow, I'd recommend Karthik's content [here](https://www.youtube.com/watch?v=lg-2e5KpjOA&list=PL6tu16kXT9PrnRtsbMjadSzrM0f43Nx8W)
-
-I'm no C# expert and tried to put together this project with my limited knowledge, please be gentle and contribute to make this project better.
+Looking forward to community contributions,
+* Test for Multiple operations
+* Test with Pact.Net for Contract testing
